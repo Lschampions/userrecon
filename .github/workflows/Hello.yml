@@ -1,16 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Jennifer Tolbert
+name: Jonathan_Workflow
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the $default-send 
+  # Triggers the workflow on push or pull request events but only for the $default-branch branch
   push:
-        branches: [ $default-send ]
- 
+    branches: [ $default-branch ]
   pull_request:
-    branches: [ $default-send ]
-]
+    branches: [ $default-branch ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
